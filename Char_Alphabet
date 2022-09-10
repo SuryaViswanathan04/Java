@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.io.*;
+class Char_Alphabet
+{
+	
+	private static Scanner sc;
+	
+	public static void main(String[] args)
+	{
+		
+		char ch;
+		sc= new Scanner(System.in);
+
+		System.out.print("Please Enter any Character =  ");
+		ch = sc.next().charAt(0);
+		
+		if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
+			System.out.println(ch + " is an Alphabet");
+		}
+		else {
+			System.out.println(ch + " is Not an Alphabet");
+		}
+		
+	}
+}
+
