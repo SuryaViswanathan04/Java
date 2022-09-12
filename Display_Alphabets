@@ -1,0 +1,19 @@
+import java.io.*;
+class 
+{
+	public static void main(String[] args) {
+		char character = 'A';
+		System.out.print("Upper Case Alphabets Displayed \n");
+		do {
+			System.out.print(character + " ");
+			character++;
+		} while (character <= 'Z');
+		System.out.print("\n\n");
+		character = 'a';
+		System.out.print("Lower Case Alphabets Displayed \n");
+		do {
+			System.out.print(character + " ");
+			character++;
+		} while (character <= 'z');
+	}
+}
