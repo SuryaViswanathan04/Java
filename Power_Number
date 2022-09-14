@@ -1,0 +1,25 @@
+import java.util.*;
+import java.io.*;
+import java.lang.Math;
+class Main
+{
+    public static void main(String arg[])
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the base number");
+        int base = s.nextInt();
+        int temp = base;
+        System.out.println("Enter the Exponential number");
+        int exp = s.nextInt();
+        for (int i=1;i<exp;i++)
+        {
+            temp = temp * temp ;
+        }
+        System.out.println("Result of "+base+" power "+exp+" is "+temp);
+    }
+    
+}
+   
+        
+    
+
