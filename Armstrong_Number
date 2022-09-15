@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Armstrong_Number {
+   public static void main(String[] args) {
+      int first_num, second_num, i;
+      Scanner s = new Scanner(System.in);
+      System.out.println("Enter the first number :");
+      first_num = s.nextInt();
+      System.out.println("Enter the limit :");
+      second_num = s.nextInt();
+      System.out.println("The Armstrong numbers are :");
+      for(i = first_num + 1; i < second_num; ++i) {
+         if (IsArmstrong (i))
+            System.out.print(i + " ");
+      }
+   }
+   public static boolean IsArmstrong(int i) {
+      int check, r, s;
+      s = 0;
+      check = i;
+      while(check != 0) {
+         r = check % 10;
+         s = s + (r * r * r);
+         check = check / 10;
+      }
+      if(s == i){
+         return true;
+      }
+      return false;
+   }
+}
