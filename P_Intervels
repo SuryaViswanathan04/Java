@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.Scanner;
+class P_Intervels{
+   public static void main(String[] args) {
+      int last, first, i;
+      boolean t;
+      Scanner s = new Scanner(System.in);
+      System.out.print("Enter the starting number : ");
+      first = s.nextInt();
+      System.out.print("Enter an ending Number: ");
+      last = s.nextInt();
+      System.out.println("The prime numbers between the interval " + first + " and " + last + " are:");
+      while (first < last) {
+         t = false;
+         for(i = 2; i <= first/2; ++i) {
+            if(first % i == 0) {
+               t = true;
+               break;
+            }
+         }
+         if (!t && first != 0 && first != 1)
+            System.out.print(first + " ");
+         ++first;
+      }
+   }
+}
