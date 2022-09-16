@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Prime_Num {
+   public static void main(String[] args) {
+      int input, i;
+      boolean u = false;
+      input = 43;
+      System.out.println("The number is defined as " +input);
+      for (i = 2; i <= input / 2; ++i) {
+         if (IsPrime(i)) {
+            if (IsPrime(input - i)) {
+               System.out.printf("%d = %d + %d\n", input, i, input - i);
+               u = true;
+            }
+         }
+      }
+      if (!u)
+         System.out.println(my_input + " cannot be expressed as the sum of two prime numbers.");
+   }
+   static boolean IsPrime(int num) {
+      boolean prime = true;
+      for (int i = 2; i <= num / 2; ++i) {
+         if (num % i == 0) {
+            prime = false;
+            break;
+         }
+      }
+      return prime;
+   }
+}
