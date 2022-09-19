@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class SumNumbers_Rec
+{
+public static void main(String args[])
+{
+    int sum;  
+    Scanner scan=new Scanner(System.in);
+    System.out.print("Enter the value for num: ");
+    int num=scan.nextInt();
+    sum=addNumbers(num);
+    System.out.print("Sum of natural numbers are:"+sum);
+} 
+static int addNumbers(int num)
+{
+    
+    if(num!= 0)
+        return num+addNumbers(num-1);
+    else
+        return num;
+}
+}
