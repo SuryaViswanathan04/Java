@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Fact_Rec
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number :");
+        int num = sc.nextInt();  
+        if(num>=0) 
+        
+           int fact=findFact(num);
+           System.out.println("The factorial of the entered the number is :"+fact);
+        }        
+        else
+        {
+            System.out.println("Factorial not possible.");
+            System.out.println("Please enter valid input.");
+        } 
+    }
+    public static int findFactorial(int num)
+    {
+        if(num==0)
+        return 1;
+        else if(num==1)
+        return 1;
+        else
+        return num*findFactorial(num-1);        
+    }
+}
+
