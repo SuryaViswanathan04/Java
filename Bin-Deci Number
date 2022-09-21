@@ -1,0 +1,13 @@
+import java.io.*;
+import java.util.*;
+class Bin-Deci Number
+{
+    public static void main(String arg[])
+    {
+        String bin;
+        Scanner n=new Scanner(System.in);
+        System.out.println("Enter the Binary number:");
+        bin = n.nextLine();
+        System.out.println("DecimalNumber :"+Integer.parseInt(bin,2));
+    }
+}
