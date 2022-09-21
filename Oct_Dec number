@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+class Oct_Dec
+{    
+   public static void main(String args[]) 
+   {
+	Scanner n = new Scanner(System.in);
+	System.out.print("Enter Octal value: ");
+	String onum = n.nextLine();
+	n.close();
+	int num = Integer.parseInt(onum, 8);
+		
+	System.out.println("Decimal value is "+onum+" is: "+num);
+   }
+}
