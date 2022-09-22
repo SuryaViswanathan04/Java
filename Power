@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.Scanner;
+class Power
+{
+   public static int power(int b, int e)
+   {
+      if (e !=0){
+         return (b * power(b, e-1));
+      }else {
+         return 1;
+      }
+   }
+   public static void main(String args[]){
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the base number :");
+      int b = sc.nextInt();
+      System.out.println("Enter the exponent number :");
+      int e = sc.nextInt();
+      System.out.println("Output : "+power(b, e));
+   }
+}
