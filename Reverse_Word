@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+class Reverse_Word
+{
+     public static void main (String[] args) 
+    {
+        String sentance="World is beautiful";
+        String reversed=reverse(sentance);
+        System.out.println("The reversed sentance is:"+ reversed);
+    }
+     public static String reverse(String sentence) 
+     {
+        if (sentence.isEmpty())
+            return sentence;
+
+        return reverse(sentence.substring(1)) + sentence.charAt(0);
+     }
+}                                                                                                                                                                                                                                                                                                    
