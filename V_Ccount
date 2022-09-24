@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Main {
+   public static void main(String[] args) {
+      int vcount, ccount;
+      String my_str;
+      vcount = 0;
+      ccount = 0;
+      Scanner scanner = new Scanner(System.in);
+      System.out.print("Enter a statement: ");
+      my_str = scanner.nextLine();
+      my_str = my_str.toLowerCase();
+      for (int i = 0; i < my_str.length(); ++i) {
+         char ch = my_str.charAt(i);
+         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            ++vcount;
+         }
+         else 
+         if ((ch >= 'a' && ch <= 'z')) {
+            ++ccount;
+         }
+      }
+      System.out.println("The number of vowels in the statement is: " + vcount);
+      System.out.println("The number of vowels in the Consonants is: " + ccount);
+   }
+}
