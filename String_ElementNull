@@ -1,0 +1,13 @@
+import java.io.*;
+import java.util.*;
+public class String_ElementNull{
+   public static void main(String[] args) {
+      String myStr1 = "Jack Sparrow";
+      String myStr2 = "";
+      boolean res;
+      res = (myStr1 == null || myStr1.length() == 0);
+      System.out.println("String 1 is null or empty? "+res);
+      res = (myStr2 == null || myStr2.length() == 0);
+      System.out.println("String 2 is null or empty? "+res);
+   }
+}
