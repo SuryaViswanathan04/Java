@@ -1,0 +1,13 @@
+import java.io.*;
+ 
+class MMS{
+    public static void main(String[] args)
+{
+        long milliseconds = 3500000;
+        long minutes = (milliseconds / 1000) / 60;
+        long seconds = (milliseconds / 1000) % 60;
+        System.out.println(milliseconds + " Milliseconds = "
+                           + minutes + " minutes and "
+                           + seconds + " seconds.");
+    }
+}
