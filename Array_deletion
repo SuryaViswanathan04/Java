@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+public class Array_deletion
+{
+    public static void main(String arg[])
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("No.of elements:");
+        int n=s.nextInt();
+        for(int q=0;q<n;q++)
+        {
+            a[q]=s.nextInt();
+        }
+        System.out.println("Index:");
+        int i=s.nextInt();
+        deletion(a,n,i);
+    }
+    static void deletion(int a[],int n,int i)
+    {
+        for(int q=i;q<n;q++)
+        {
+            a[q]=a[q+1];
+        }
+        n--;
+        answer(a,n);
+    }
+    static void answer(int a[],int n)
+    {
+        for(int q=0;q<n;q++)
+        {
+            System.out.println(a[q]);
+        }
+    }
+}
