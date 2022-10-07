@@ -1,0 +1,36 @@
+import java.io.*;
+public class Array_insertion
+{
+    public static void main(String arg[])
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("No.of elements:");
+        int n=s.nextInt();
+        for(int q=0;q<n;q++)
+        {
+            a[q]=s.nextInt();
+        }
+        System.out.println("Index:");
+        int i=s.nextInt();
+        System.out.println("value:");
+        int e=s.nextInt();
+        insertion(a,n,i,e);
+    }
+    static void insertion(int a[],int n,int i,int e)
+    {
+        for(int q=n-1;q>=i;q--)
+        {
+            a[q+1]=a[q];
+        }
+        a[i]=e;
+        n++;
+        answer(a,n);
+    }
+    static void answer(int a[],int n)
+    {
+        for(int q=0;q<n;q++)
+        {
+            System.out.println(a[q]);
+        }
+    }
+}
