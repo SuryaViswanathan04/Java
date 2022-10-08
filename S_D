@@ -1,0 +1,12 @@
+import java.io.*;
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    String s1 = "23";
+    String s2 = "456.6";
+    double num1 = Double.parseDouble(s1);
+    double num2 = Double.parseDouble(s2);
+    System.out.println(num1);    
+    System.out.println(num2);   
+  }
+}
