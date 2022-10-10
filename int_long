@@ -1,0 +1,15 @@
+import java.io.*;
+class int_long{
+  public static void main(String[] args) {
+
+    
+    int a = 23;
+    int b = 52;
+    long c = a;
+    long d =b;
+     System.out.println("Convert the number int(a) into long(c) :");  
+    System.out.println(c);
+     System.out.println("Convert the number int(b) into long(d) :");  // 2322331
+    System.out.println(d);    // 52341241
+  }
+}
