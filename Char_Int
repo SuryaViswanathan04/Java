@@ -1,0 +1,12 @@
+import java.io.*;
+import java.util.*;
+class main
+{
+    public static void main(String[] args)
+    {
+        char ch = '3';
+        System.out.println("char value: " + ch);
+        int a = Integer.parseInt(String.valueOf(ch));
+        System.out.println("int value: " + a);
+    }
+}
