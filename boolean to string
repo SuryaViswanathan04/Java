@@ -1,0 +1,10 @@
+import java.io.*;
+class Main {
+  public static void main(String[] args) {
+    boolean booleanValue1 = true;
+    boolean booleanValue2 = false;
+    String sV1 = String.valueOf(booleanValue1);
+    String stringValue2 = String.valueOf(booleanValue2);
+    System.out.println(sV1);    
+    System.out.println(sV2);    
+}
