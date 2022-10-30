@@ -1,0 +1,26 @@
+#include<stdio.h>  
+  
+int main()  
+{  
+    int i, n, temp, count;  
+  
+    printf("Enter start and end value, to find odd numbers\n");  
+    scanf("%d%d", &i, &n);  
+  
+    if(i > n)  
+    {  
+        temp  = i;  
+        i = n;  
+        n = temp;  
+    }  
+  
+    printf("Odd numbers between %d and %d are\n", i, n);  
+  
+    for(count = i; count <= n; count++)  
+    {  
+        if(count % 2 != 0)  
+            printf("%d\n", count);  
+    }  
+  
+    return 0;  
+} 
