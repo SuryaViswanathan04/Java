@@ -1,0 +1,15 @@
+import java.util.regex.Matcher;  
+import java.util.regex.Pattern;  
+public class PatternCompileExample2 {  
+public static void main(String[] args) {  
+    int count=0;   
+    Pattern  p=Pattern.compile("@gmail");   
+    Matcher m=p.matcher("abc@gmailabc@gmail126@gmail.com");  
+    while(m.find())  
+    {  
+    count =count+1;  
+System.out.println(" Start : "+m.start()+", End : "+m.end()+" Pattern group : "+m.group());  
+    }  
+    System.out.println(" number of Matches:  "+count);  
+    }  
+ }  
