@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Compare{
+
+public static void main(String[] args){
+    Scanner Scanner = new Scanner (System.in);
+
+    System.out.println("Enter first word: ");
+    String var1 = Scanner.nextLine();
+
+    System.out.println("Enter second word: ");
+    String var2 = Scanner.nextLine();
+
+    if (var1 == var2)
+        System.out.println("Yes");
+    else
+        System.out.println("No");
+}
+
+
+
+}
