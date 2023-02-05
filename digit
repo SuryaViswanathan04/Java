@@ -1,0 +1,13 @@
+import java.io.*;
+public class Digit{
+   public static void main(String []args) {
+      System.out.println("Checking for digit...");
+      char val = '5';
+      System.out.println("Value: "+val);
+      if (Character.isDigit(val)) {
+         System.out.println("Character is a digit!");
+      }else {
+         System.out.println("Character is not a digit!");
+      }
+   }
+}
